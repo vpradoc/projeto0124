@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto UNINOVE</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <section class="middle">
+
+      <textarea
+        id="caixa-entrada"
+        cols="30"
+        rows="10"
+        placeholder="Digite seu texto"></textarea>
+
+      <container class="campo-resposta">
+        <img
+          id="bg-lateral"
+          src="./assets/retangulo.png"
+          alt="Background Lateral" />
+
+        <img
+          id="bg-lateral-icone"
+          src="./assets/person.png"
+          alt="Ícone Pessoa" />
+
+        <h1 id="bg-lateral-titulo">Nenhuma mensagem encontrada</h1>
+        <h2 id="bg-lateral-texto">
+          Digite um texto que você deseja resumir.
+        </h2>
+
+        <textarea id="resposta" cols="30" rows="10"></textarea>
+
+        <button id="botao-copiar" onclick="copiarTexto()">Copiar</button>
+      </container>
+
+      <container class="alerta">
+        <img
+          id="icone-alerta"
+          src="./assets/Vector.png"
+          alt="Ícone de alerta" />
+        <h1 id="texto-alerta">Não adicionar caracteres especiais.</h1>
+      </container>
+
+      <container class="interacoes">
+          <button id="botao-resumir" onclick="exibirItens(), resume()">Resumir</button>
+        </a>
+      </container>
+    </section>
+  </body>
+  <script src="./index.js"></script>
+</html>
